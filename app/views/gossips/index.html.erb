@@ -1,0 +1,16 @@
+<h1>Gossips index</h1>
+<table>
+	<tr>
+		<th>Auteur</th>
+		<th> Contenu</th>
+	</tr>
+
+	<% @gossips.each do |gossip| %>
+	<tr>
+		<td><%= gossip.anonymous_author %></td>
+		<td><%= gossip.content %> </td>	
+		
+	</tr>
+	<% end %>
+</table>
+	
